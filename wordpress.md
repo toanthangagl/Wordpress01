@@ -60,10 +60,14 @@
 
 - **Hàm số the_title()**
   **the_title( string $before = '', string $after = '', bool $display = true )**
+  - $before : thêm chuỗi trước tiêu đề ()
+  - $after : thêm chuỗi sau tiêu đề
+  - bool $display: mặc định true sẽ được in ra màn hình. false để ẩn đi
   - return void|string
   - Hàm này thường được dùng để hiện thị tiêu đề trang hoặc bài viết. Nó sẽ tự động lặp và không yêu cầu bất kỳ tham số nào. Nó **chỉ sử dụng trong vòng lặp** để hiển thị tiêu đề của bài viết, trang của hiện tại.
 - **Hàm số get_the_title()**
   **get_the_title( int|WP_Post $post )**
+  - int|WP_Post: ID của Post hoặc đối tượng WP_Post. Mặc định là $post toàn cục
   - return string
   - Hàm này được sử dụng để lấy tiêu đề của một bài viết hoặc trang và lưu trữ nó trong một biến để thao tác thêm. Nó trả về tiêu đề dưới dạng một chuỗi, cho phép sử dụng theo nhiều cách khác nhau. **Có thể sử dụng bên ngoài vòng lặp**
 
